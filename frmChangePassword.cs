@@ -123,5 +123,10 @@ namespace DBPROJECT
                                      
             }
         }
+
+        private void frmChangePassword_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

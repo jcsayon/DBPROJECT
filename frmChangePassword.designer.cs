@@ -32,13 +32,13 @@ namespace DBPROJECT
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChangePassword));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnShowHide = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.txtPassword2 = new System.Windows.Forms.TextBox();
             this.txtPassword1 = new System.Windows.Forms.TextBox();
-            this.btnApply = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnShowHide = new System.Windows.Forms.Button();
+            this.btnApply = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,23 +56,6 @@ namespace DBPROJECT
             this.groupBox1.Size = new System.Drawing.Size(419, 132);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
-            // 
-            // btnShowHide
-            // 
-            this.btnShowHide.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnShowHide.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowHide.ForeColor = System.Drawing.Color.Black;
-            this.btnShowHide.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShowHide.ImageIndex = 0;
-            this.btnShowHide.ImageList = this.imageList1;
-            this.btnShowHide.Location = new System.Drawing.Point(324, 13);
-            this.btnShowHide.Name = "btnShowHide";
-            this.btnShowHide.Size = new System.Drawing.Size(77, 26);
-            this.btnShowHide.TabIndex = 17;
-            this.btnShowHide.TabStop = false;
-            this.btnShowHide.Text = "Show";
-            this.btnShowHide.UseVisualStyleBackColor = false;
-            this.btnShowHide.Click += new System.EventHandler(this.btnShowHide_Click);
             // 
             // imageList1
             // 
@@ -108,21 +91,6 @@ namespace DBPROJECT
             this.txtPassword1.TabIndex = 0;
             this.txtPassword1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword1_KeyDown);
             // 
-            // btnApply
-            // 
-            this.btnApply.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApply.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnApply.ImageKey = "edit-icon-png-3597.png";
-            this.btnApply.ImageList = this.imageList1;
-            this.btnApply.Location = new System.Drawing.Point(189, 92);
-            this.btnApply.Name = "btnApply";
-            this.btnApply.Size = new System.Drawing.Size(75, 23);
-            this.btnApply.TabIndex = 2;
-            this.btnApply.Text = "Apply";
-            this.btnApply.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnApply.UseVisualStyleBackColor = true;
-            this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -145,6 +113,38 @@ namespace DBPROJECT
             this.label3.TabIndex = 12;
             this.label3.Text = "New Password";
             // 
+            // btnShowHide
+            // 
+            this.btnShowHide.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnShowHide.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowHide.ForeColor = System.Drawing.Color.Black;
+            this.btnShowHide.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnShowHide.ImageIndex = 0;
+            this.btnShowHide.ImageList = this.imageList1;
+            this.btnShowHide.Location = new System.Drawing.Point(324, 13);
+            this.btnShowHide.Name = "btnShowHide";
+            this.btnShowHide.Size = new System.Drawing.Size(77, 26);
+            this.btnShowHide.TabIndex = 17;
+            this.btnShowHide.TabStop = false;
+            this.btnShowHide.Text = "Show";
+            this.btnShowHide.UseVisualStyleBackColor = false;
+            this.btnShowHide.Click += new System.EventHandler(this.btnShowHide_Click);
+            // 
+            // btnApply
+            // 
+            this.btnApply.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApply.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnApply.ImageKey = "edit-icon-png-3597.png";
+            this.btnApply.ImageList = this.imageList1;
+            this.btnApply.Location = new System.Drawing.Point(189, 92);
+            this.btnApply.Name = "btnApply";
+            this.btnApply.Size = new System.Drawing.Size(75, 23);
+            this.btnApply.TabIndex = 2;
+            this.btnApply.Text = "Apply";
+            this.btnApply.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnApply.UseVisualStyleBackColor = true;
+            this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
+            // 
             // frmChangePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +159,7 @@ namespace DBPROJECT
             this.Name = "frmChangePassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Change User Password";
+            this.Load += new System.EventHandler(this.frmChangePassword_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
